@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminue o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Usando áudio</h1>
+    <p><em>Aprendendo a usar áudio em HTML</em></p>
+    <p><strong>Música baixada do Youtube</strong></p>
+    <audio src="midias/happy-mistake.mp3" controls autoplay></audio>
+    <p><strong>Música de Ketano Maranhão</strong></p>
+    <audio src="midias/km-ma.mp3" controls autoplay></audio>
+    <p><strong>Podcast do Guanabara</strong></p>
+    <audio src="midias/guanacast-33.mp3" controls autoplay></audio>
+    <h1>Segunda opção para reprodução de áudio em HTML</h1>
+    <p><strong>Podcast do Gustavo Guanabara</strong></p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <p>Se não estiver conseguindo abrir o áudio, <a href="midias/guanacast-33.mp3">tente baixar ele por aqui.</a></p>
+    </audio>
+</body>
+</html>
